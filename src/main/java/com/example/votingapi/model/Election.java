@@ -22,7 +22,7 @@ public class Election {
     @JsonIgnore
     private Set<Vote> votes = new HashSet<>();
 
-    // Getters and setters
+
     public Long getId() {
         return id;
     }

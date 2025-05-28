@@ -17,7 +17,7 @@ public class Candidate {
     @JsonIgnore
     private Election election;
 
-    // Getters and setters
+
     public Long getId() {
         return id;
     }

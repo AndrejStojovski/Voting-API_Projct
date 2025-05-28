@@ -17,7 +17,7 @@ public class DataInitializer {
             VoteRepository voteRepo
     ) {
         return args -> {
-            // Create voters
+
             Voter alice = new Voter();
             alice.setName("Alice");
 
@@ -27,13 +27,13 @@ public class DataInitializer {
             voterRepo.save(alice);
             voterRepo.save(bob);
 
-            // Create an election
+
             Election election = new Election();
             election.setTitle("2025 Student Council");
 
             electionRepo.save(election);
 
-            // Create candidates
+
             Candidate jane = new Candidate();
             jane.setName("Jane");
             jane.setElection(election);
@@ -45,7 +45,7 @@ public class DataInitializer {
             candidateRepo.save(jane);
             candidateRepo.save(mark);
 
-            // Cast votes
+
             Vote vote1 = new Vote();
             vote1.setVoter(alice);
             vote1.setElection(election);

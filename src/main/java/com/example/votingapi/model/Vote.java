@@ -25,7 +25,7 @@ public class Vote {
     @JsonIgnore
     private Candidate candidate;
 
-    // Getters and setters
+
     public Long getId() {
         return id;
     }
